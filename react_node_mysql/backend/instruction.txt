@@ -1,0 +1,6 @@
+npm i
+
+
+npm install mysql2
+
+
