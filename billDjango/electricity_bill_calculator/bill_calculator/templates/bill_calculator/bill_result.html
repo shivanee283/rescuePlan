@@ -1,0 +1,25 @@
+<!-- bill_calculator/templates/bill_calculator/bill_result.html -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bill Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Electricity Bill Result</h1>
+        <p>Customer Name: {{ bill.customer_name }}</p>
+        <p>Period: {{ bill.start_date }} to {{ bill.end_date }}</p>
+        <p>Kilowatt Hours Used: {{ bill.kwh_used }}</p>
+        <p>Cost per Kilowatt Hour: ${{ bill.cost_per_kwh }}</p>
+        <p>Total Cost: ${{ bill.total_cost }}</p>
+        <a href="{% url 'calculate_bill' %}" class="btn btn-primary">Calculate Another Bill</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+python3 -m venv myenv
+
+source myenv/bin/activate
+
+pip install django
+
+django-admin startproject electricity_bill_calculator
+
+cd electricity_bill_calculator
+
+python manage.py startapp bill_calculator
+
+mkdir -p bill_calculator/templates/bill_calculator
+
+touch bill_calculator/templates/bill_calculator/calculate_bill.html
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+touch bill_calculator/forms.py
+
+
+
+
+
+
+
+access here
+
+http://127.0.0.1:8000/bill/calculate/
+
+date format 
+04/23/2024
