@@ -1,0 +1,18 @@
+for virtual env
+
+
+remember 
+go in myenv and the install django
+
+pip install django
+
+macos = python3 -m venv myenv     source myenv/bin/activate
+
+windows = python -m venv myenv    venv\Scripts\activate
+
+
+
+to run the app
+
+python3 manage.py runserver
+http://127.0.0.1:8000/
