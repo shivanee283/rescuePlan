@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Operations</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Array Operations</a>
+  </nav>
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Array Operations</h1>
+    <div class="row">
+      <!-- Integer Array Section -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            <h3>Integer Array</h3>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="intArray">Enter integers (comma separated):</label>
+              <input type="text" id="intArray" class="form-control">
+            </div>
+            <button id="sortIntArray" class="btn btn-primary">
+              <i class="fas fa-sort"></i> Sort
+            </button>
+            <button id="searchIntArray" class="btn btn-secondary">
+              <i class="fas fa-search"></i> Search
+            </button>
+            <div class="form-group mt-3">
+              <label for="intSearchValue">Search for:</label>
+              <input type="text" id="intSearchValue" class="form-control">
+            </div>
+            <div id="intArrayResult" class="mt-3 alert alert-info" role="alert"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Named Entities Array Section -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            <h3>Named Entities Array</h3>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="nameArray">Enter names (comma separated):</label>
+              <input type="text" id="nameArray" class="form-control">
+            </div>
+            <button id="sortNameArray" class="btn btn-primary">
+              <i class="fas fa-sort"></i> Sort
+            </button>
+            <button id="searchNameArray" class="btn btn-secondary">
+              <i class="fas fa-search"></i> Search
+            </button>
+            <div class="form-group mt-3">
+              <label for="nameSearchValue">Search for:</label>
+              <input type="text" id="nameSearchValue" class="form-control">
+            </div>
+            <div id="nameArrayResult" class="mt-3 alert alert-info" role="alert"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
